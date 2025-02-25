@@ -6,25 +6,11 @@ setup = function(){
 
 //draw Function - will run repeatedly
 draw = function() {
-  fill(66,66);
-  position=position+70
-  ellipse(position,mouseY,50,50);
-  ellipse(mouseX, mouseY, 20, 20);
-
-var position=20;
-var speed=3;
-
+    ellipse(mouseX, mouseY, 20, 20);
+if(mousePressed){ellipse(mouseX, position,50,50);}
   //***in the video they use if(mouseIsPressed)
   //***in glitch we use if(mousePressed)
 
-
-if(position>375){
-speed=-5
-
-if(position<25){
-speed=5
-}
-}
   funWithKeys();
 };
 
